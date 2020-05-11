@@ -18,6 +18,7 @@ import './registerServiceWorker'
 import firebase from 'firebase'
 import 'firebase/auth'
 import 'firebase/database'
+import fbConfig from './firebaseConfig.local.js'
 
 Vue.config.productionTip = false
 
@@ -33,16 +34,7 @@ Vue.component('Paginate', Paginate)
 Vue.directive('tooltip', tooltipDirective)
 
 // 'vue-finance' web app's Firebase initialization
-firebase.initializeApp({
-  apiKey: 'AIzaSyAjNKz1AG30eU-0Q2pEnebW5rXErw6OsOk',
-  authDomain: 'vue-finance-5632d.firebaseapp.com',
-  databaseURL: 'https://vue-finance-5632d.firebaseio.com',
-  projectId: 'vue-finance-5632d',
-  storageBucket: 'vue-finance-5632d.appspot.com',
-  messagingSenderId: '617073120799',
-  appId: '1:617073120799:web:7f54f94aa2119b2e29672a',
-  measurementId: 'G-GQ253V8DZC'
-})
+firebase.initializeApp(fbConfig)
 
 let app
 
