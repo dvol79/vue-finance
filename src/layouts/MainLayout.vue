@@ -22,25 +22,25 @@
 </template>
 
 <script>
-import Navbar from "@/components/AppNavbar";
-import Sidebar from "@/components/AppSidebar";
-import localizeFilter from "@/filters/localize.filter";
+import Navbar from '@/components/AppNavbar'
+import Sidebar from '@/components/AppSidebar'
+import localizeFilter from '@/filters/localize.filter'
 
 export default {
-  name: "main-layout",
+  name: 'main-layout',
   data: () => ({
     isSidebarOpen: true,
     loading: true
   }),
   async mounted() {
     if (!Object.keys(this.$store.getters.info).length) {
-      await this.$store.dispatch("fetchInfo");
+      await this.$store.dispatch('fetchInfo')
     }
     if (!Object.keys(this.$store.getters.tariffs).length) {
-      await this.$store.dispatch("fetchTariffs");
+      await this.$store.dispatch('fetchTariffs')
     }
 
-    this.loading = false;
+    this.loading = false
   },
   components: {
     Navbar,
@@ -48,19 +48,19 @@ export default {
   },
   computed: {
     error() {
-      return this.$store.getters.error;
+      return this.$store.getters.error
     },
     locale() {
-      return this.$store.getters.info.locale;
+      return this.$store.getters.info.locale
     },
     addNewRec() {
-      return localizeFilter("Btn.add.new.record");
+      return localizeFilter('Btn.add.new.record')
     }
   },
   watch: {
     error(fbError) {
-      this.$error(fbError.code || "Error.unknown");
+      this.$error(fbError.code || 'Error.unknown')
     }
   }
-};
+}
 </script>

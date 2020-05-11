@@ -34,22 +34,22 @@ export default {
   }),
   methods: {
     async logout() {
-      await this.$store.dispatch("logout");
-      this.$router.push("/login");
+      await this.$store.dispatch('logout')
+      this.$router.push('/login')
     }
   },
   computed: {
     name() {
-      return this.$store.getters.info.name;
+      return this.$store.getters.info.name
     }
   },
   mounted() {
     this.interval = setInterval(() => {
-      this.date = new Date();
-    }, 1000);
+      this.date = new Date()
+    }, 1000)
   },
   beforeDestroy() {
-    clearInterval(this.interval);
+    clearInterval(this.interval)
   }
-};
+}
 </script>

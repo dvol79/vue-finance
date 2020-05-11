@@ -18,16 +18,16 @@
 
 <script>
 export default {
-  name: "Loader",
+  name: 'Loader',
   computed: {
     color() {
       const colors = [
-        "spinner-red-only",
-        "spinner-green-only",
-        "spinner-blue-only"
-      ];
-      return colors[Math.floor(Math.random() * 3)];
+        'spinner-red-only',
+        'spinner-green-only',
+        'spinner-blue-only'
+      ]
+      return colors[Math.floor(Math.random() * 3)]
     }
   }
-};
+}
 </script>
