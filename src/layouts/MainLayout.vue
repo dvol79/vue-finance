@@ -4,7 +4,7 @@
     <div v-else class="app-main-layout">
       <Navbar @click="isSidebarOpen = !isSidebarOpen" />
 
-      <Sidebar v-model="isSidebarOpen" :key="locale" />
+      <Sidebar v-model="isSidebarOpen" :key="locale" @clickClose="isSidebarOpen = !isSidebarOpen" />
 
       <main class="app-content" :class="{ full: !isSidebarOpen }">
         <div class="app-page">
@@ -29,7 +29,7 @@ import localizeFilter from '@/filters/localize.filter'
 export default {
   name: 'main-layout',
   data: () => ({
-    isSidebarOpen: true,
+    isSidebarOpen: false,
     loading: true
   }),
   async mounted() {

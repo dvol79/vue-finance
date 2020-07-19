@@ -1,5 +1,9 @@
 <template>
-  <ul class="sidenav app-sidenav collapsible collapsible-accordion" :class="{ open: value }">
+  <ul
+    class="sidenav app-sidenav collapsible collapsible-accordion"
+    :class="{ open: value }"
+    @click.prevent="$emit('clickClose')"
+  >
     <router-link
       v-for="link in links"
       :key="link.url"

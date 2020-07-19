@@ -1,4 +1,4 @@
-# vue-fanance
+# vue-finance
 
 ## App for management home finance and Metering indicators
 

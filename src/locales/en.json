@@ -82,5 +82,6 @@
   "Metering.electr.night": "Electricity night",
   "Metering.electr.night.validate": "Enter Electricity night counter value",
   "Change": "Change",
-  "Total": "Total"
+  "Total": "Total",
+  "Exit": "Exit"
 }

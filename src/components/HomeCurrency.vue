@@ -1,5 +1,5 @@
 <template>
-  <div class="col s12 m6 l8">
+  <div class="col s12 m7 l8">
     <div class="card cyan darken-1 bill-card">
       <div class="card-content white-text">
         <div class="card-header">
@@ -20,7 +20,7 @@
               <td>{{ cur }}</td>
               <td>{{ rates[cur].Value.toFixed(2) }}</td>
               <td>{{ (rates[cur].Value - rates[cur].Previous).toFixed(2) }}</td>
-              <td>{{ date | date('date') }}</td>
+              <td>{{ date | date('dshort') }}</td>
             </tr>
           </tbody>
         </table>

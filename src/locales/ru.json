@@ -82,5 +82,6 @@
   "Metering.electr.night": "Электричество ночь",
   "Metering.electr.night.validate": "Введите показание ночного счетчика электричества",
   "Change": "Изменить",
-  "Total": "Итого"
+  "Total": "Итого",
+  "Exit": "Выход"
 }
