@@ -13,6 +13,12 @@
 - HTML Metadata manager - [vue-meta](https://vue-meta.nuxtjs.org/)
 - Exchange rates of the Central Bank of the Russian Federation [link](https://www.cbr-xml-daily.ru/)
 
+## Demo
+
+[vue-finance-demo](https://vue-finance-5632d.web.app)
+
+- Test User: test2_vdv@mail.ru / 123waq
+
 ## Project setup
 
 ```
